@@ -48,8 +48,18 @@ First line under 72 chars. Add body after blank line if needed.
 
 End all commits with: `Co-Authored-By: Auggie`
 
+## Pre-Commit Check
+
+Before committing, invoke the **Check** agent to verify:
+- Build passes
+- Tests pass
+- No lint errors
+
+If Check fails, stop and report. Don't commit broken code.
+
 ## Rules
 
+- Main branch is **main** (not master)
 - NEVER commit secrets (.env, credentials, keys, tokens)
 - NEVER force push or use destructive commands
 - NEVER amend pushed commits
